@@ -1,0 +1,47 @@
+{
+  "name": "vibe-chat-be",
+  "version": "1.0.0",
+  "description": "NestJS backend for Vibe Chat with Drizzle ORM + PostgreSQL",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/main.js",
+    "start:dev": "ts-node src/main.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:push": "drizzle-kit push",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "nestjs",
+    "chat",
+    "drizzle",
+    "postgresql"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@ai-sdk/openai-compatible": "^2.0.41",
+    "@nestjs/common": "^11.1.19",
+    "@nestjs/config": "^4.0.4",
+    "@nestjs/core": "^11.1.19",
+    "@nestjs/platform-express": "^11.1.19",
+    "ai": "^6.0.168",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.15.1",
+    "drizzle-orm": "^0.45.2",
+    "pg": "^8.20.0",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2",
+    "uuid": "^14.0.0"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^11.0.21",
+    "@types/node": "^25.6.0",
+    "@types/pg": "^8.20.0",
+    "drizzle-kit": "^0.31.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  }
+}
